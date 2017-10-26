@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url "https://jcenter.bintray.com/" }
+        maven { url "https://dl.google.com/dl/android/maven2/" }
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if(requested.id.id == "com.android.application") {
+                useModule("com.android.tools.build:gradle:${requested.version}")
+            }
+        }
+    }
+}
+include ':app'
+rootProject.buildFileName = 'build.gradle.kts'
