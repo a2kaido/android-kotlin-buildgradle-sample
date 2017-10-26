@@ -1,8 +1,3 @@
-repositories {
-    jcenter()
-    google()
-}
-
 object BuildSettings {
     val version = 1
     val name = "1.0.0"
