@@ -10,7 +10,7 @@ object BuildSettings {
 
 plugins {
     id("com.android.application") version "3.0.0"
-    kotlin("android")
+    kotlin("android") version "1.1.51"
 }
 
 android {
