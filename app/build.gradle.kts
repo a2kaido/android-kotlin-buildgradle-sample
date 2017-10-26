@@ -1,5 +1,5 @@
-object BuildSettings {
-    val version = 1
+object AppVersion {
+    val code = 1
     val name = "1.0.0"
 }
 
@@ -14,8 +14,8 @@ android {
         applicationId = "jp.a2kaido.kts"
         minSdkVersion(21)
         targetSdkVersion(26)
-        versionCode = BuildSettings.version
-        versionName = BuildSettings.name
+        versionCode = AppVersion.code
+        versionName = AppVersion.name
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
